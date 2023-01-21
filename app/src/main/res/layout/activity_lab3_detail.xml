@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab3.Lab3DetailActivity">
+
+    <ImageView
+        android:id="@+id/lab3_image"
+        android:layout_width="@dimen/big_btn_width"
+        android:layout_height="@dimen/big_btn_width"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/game_cover" />
+
+    <TextView
+        android:id="@+id/lab3_title"
+        android:layout_width="@dimen/big_btn_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_default"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/lab3_image"
+        tools:text="title"  />
+
+    <TextView
+        android:id="@+id/lab3_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toEndOf="@id/lab3_image"
+        app:layout_constraintTop_toTopOf="@+id/guideline4"
+        tools:text="description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="@dimen/margin_default"
+        android:layout_marginEnd="@dimen/margin_default">
+
+
+    <EditText
+        android:id="@+id/lab3_detail_editText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Label"
+        android:hint="@string/title"
+        android:inputType="text"
+        android:maxLength="50"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lab3_editText_year" />
+
+    <EditText
+        android:id="@+id/lab3_detail_editText_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Label"
+        android:hint="@string/year"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lab3_editText_description" />
+
+    <EditText
+        android:id="@+id/lab3_detail_editText_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Label"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:maxLength="200"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lab3_editText_imageURL" />
+
+    <EditText
+        android:id="@+id/lab3_detail_editText_imageURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autofillHints="Label"
+        android:hint="@string/image_url"
+        android:inputType="textUri"
+        android:maxLength="200"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteY="500dp" />
+
+        <Button
+            android:id="@+id/btn_lab3_update"
+            android:layout_width="@dimen/big_btn_width"
+            android:layout_height="@dimen/big_btn_height"
+            android:text="@string/update"
+            android:textSize="@dimen/big_btn_textSize"
+            android:layout_gravity="center"
+            android:layout_marginTop="40sp"/>
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="395dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ITMO_2022</string>
+    <string name="lab_1">Lab 1</string>
+    <string name="lab_2">Lab 2</string>
+    <string name="lab_3">Lab 3</string>
+    <string name="lab1_label">LABEL</string>
+    <string name="edit_text">Edit Text</string>
+    <string name="hide_list">Hide List</string>
+    <string name="show_list">Show List</string>
+    <string name="toast">TOAST</string>
+    <string name="works">works</string>
+    <string name="change_label_color">Change label color</string>
+    <string name="live_broadcast_from_your_camera">Live broadcast from your camera</string>
+    <string name="nat" translatable="false">NAT</string>
+    <string name="col" translatable="false">COL</string>
+    <string name="fib" translatable="false">FIB</string>
+    <string name="change_label_text">Change label text</string>
+    <string name="your_photo">Your photo</string>
+    <string name="minus" translatable="false">-</string>
+    <string name="plus" translatable="false">+</string>
+    <string name="game_cover">Game cover</string>
+    <string name="game_icon">Game icon</string>
+    <string name="text_changed">Text changed</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="run">RUN</string>
+    <string name="stop">STOP</string>
+    <string name="reset">RESET</string>
+    <string name="add">Add</string>
+    <string name="delete">Delete</string>
+    <string name="title">Title</string>
+    <string name="year">Year</string>
+    <string name="check">Position checked:</string>
+    <string name="description">Description</string>
+    <string name="image_url">Image URL</string>
+    <string name="update">Update</string>
+    <string-array name="games">
+        <item>Ratchet and Clank</item>
+        <item>Jak and Daxter</item>
+        <item>Sly Cooper</item>
+    </string-array>
+    <string-array name="games_description">
+        <item>A series of platformer genre games developed by Insomniac Games exclusively for Sony PlayStation consoles. The games tell about the space adventures of two heroes.</item>
+        <item>A series of three-dimensional computer games developed by Naughty Dog and published by Sony Computer Entertainment. The games in the series are a mix of action, racing and puzzles.</item>
+        <item>A series of games in the genres of platformer and stealth action, for PlayStation 2, PlayStation 3 and PlayStation Vita.</item>
+    </string-array>
+</resources>

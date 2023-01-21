@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_lab1"
+        android:layout_width="@dimen/big_btn_width"
+        android:layout_height="@dimen/big_btn_height"
+        android:text="@string/lab_1"
+        android:textSize="@dimen/big_btn_textSize"
+        android:layout_gravity="center"
+        android:layout_marginTop="40sp"/>
+
+    <Button
+        android:id="@+id/btn_lab2"
+        android:layout_width="@dimen/big_btn_width"
+        android:layout_height="@dimen/big_btn_height"
+        android:text="@string/lab_2"
+        android:textSize="@dimen/big_btn_textSize"
+        android:layout_gravity="center"
+        android:layout_marginTop="40sp"/>
+
+    <Button
+        android:id="@+id/btn_lab3"
+        android:layout_width="@dimen/big_btn_width"
+        android:layout_height="@dimen/big_btn_height"
+        android:text="@string/lab_3"
+        android:textSize="@dimen/big_btn_textSize"
+        android:layout_gravity="center"
+        android:layout_marginTop="40sp"/>
+
+    <TextView
+        android:id="@+id/txt_scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:textSize="40sp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/red"
+            android:textColor="@color/black"
+            android:layout_marginEnd="25sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/btn_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:textSize="40sp"
+            android:backgroundTint="@color/green"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/nav_menu"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

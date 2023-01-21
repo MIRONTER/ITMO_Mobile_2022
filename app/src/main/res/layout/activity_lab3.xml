@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lab3Coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lab3.Lab3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/lab3_list"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </ListView>
+
+        <EditText
+            android:id="@+id/lab3_editText_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:maxLength="50"
+            android:hint="@string/title"
+            android:autofillHints="Label"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/lab3_editText_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:maxLength="4"
+            android:hint="@string/year"
+            android:autofillHints="Label"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/lab3_editText_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:maxLength="200"
+            android:hint="@string/description"
+            android:autofillHints="Label"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/lab3_editText_imageURL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginStart="@dimen/margin_default"
+            android:layout_marginEnd="@dimen/margin_default"
+            android:layout_marginTop="@dimen/margin_default"
+            android:maxLength="200"
+            android:hint="@string/image_url"
+            android:autofillHints="Label"
+            android:inputType="textUri" />
+
+        <LinearLayout
+            android:layout_width="@dimen/linear_width"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/margin_default">
+
+            <Button
+                android:id="@+id/lab3_btn_add"
+                android:layout_width="@dimen/big_btn_width"
+                android:layout_height="@dimen/big_btn_height"
+                android:text="@string/add"
+                android:textSize="18sp"
+                android:layout_gravity="start"
+                android:backgroundTint="@color/green"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/lab3_btn_delete"
+                android:layout_width="@dimen/big_btn_width"
+                android:layout_height="@dimen/big_btn_height"
+                android:text="@string/delete"
+                android:textSize="18sp"
+                android:backgroundTint="@color/red"
+                android:textColor="@color/black"
+                android:layout_gravity="start"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/lab3_fab"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/stat_notify_sync"
+        android:focusable="true"
+        android:layout_margin="@dimen/margin_default"
+        android:layout_gravity="end|bottom"
+        android:contentDescription="@string/change_label_text" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

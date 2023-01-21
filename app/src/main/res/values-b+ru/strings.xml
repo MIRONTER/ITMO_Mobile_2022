@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ИТМО_2022</string>
+    <string name="lab_1">Лаба 1</string>
+    <string name="lab_2">Лаба 2</string>
+    <string name="lab_3">Лаба 3</string>
+    <string name="lab1_label">ЛЕЙБЛ</string>
+    <string name="edit_text">Изменить текст</string>
+    <string name="hide_list">Скрыть список</string>
+    <string name="show_list">Показать список</string>
+    <string name="toast">TOAST</string>
+    <string name="works">работает</string>
+    <string name="change_label_color">Сменить цвет надписи</string>
+    <string name="live_broadcast_from_your_camera">Прямая трансляция с вашей камеры</string>
+    <string name="change_label_text">Заменить текст лейбла</string>
+    <string name="your_photo">Ваше фото</string>
+    <string name="game_cover">Game cover</string>
+    <string name="game_icon">Game icon</string>
+    <string name="text_changed">Текст изменен</string>
+    <string name="navigation_drawer_open">Открыть меню навигации</string>
+    <string name="navigation_drawer_close">Закрыть меню навигации</string>
+    <string name="run">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="reset">Сброс</string>
+    <string name="add">Добавить</string>
+    <string name="delete">Удалить</string>
+    <string name="title">Название игры</string>
+    <string name="year">Год выпуска</string>
+    <string name="check">Выбран элемент списка: </string>
+    <string name="description">Описание</string>
+    <string name="image_url">Ссылка на обложку</string>
+    <string name="update">Обновить</string>
+    <string-array name="games_description">
+        <item>Серия игр жанра платформер, разработанная компанией Insomniac Games эксклюзивно для приставок Sony PlayStation. Игры повествуют о космических приключениях двух героев.</item>
+        <item>Серия трёхмерных компьютерных игр, разработанная компанией Naughty Dog и изданная Sony Computer Entertainment. Игры серии представляет собой смесь экшена, гонок и головоломок.</item>
+        <item>Серия игр в жанрах платформер и стелс-экшен, для PlayStation 2, PlayStation 3 и PlayStation Vita.</item>
+    </string-array>
+</resources>
